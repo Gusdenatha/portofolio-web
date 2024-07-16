@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73f969fe62.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("sbTwuLavZ69ANdfir");
+        })();
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#seminar" onclick="closemenu()">Seminar</a></li>
+                    <li><a href="#portofolio" onclick="closemenu()">Portofolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm<span> I Gusti Lanang</span><br>Agung Karinatha From Bali</h1>
+            </div>
+        </div>
+    </div>
+
+   <!-- -----------about------------- -->
+   <div id="about">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png.png">
+        </div>
+        <div class="about-col-2">
+            <h1 clasas="sub-title">About Me</h1>
+            <p>Hello, let me introduce myself, my name is I Gusti Lanang Agung Karinatha, you can be called Gusde, I come from Denpasar, Bali, specifically in North Denpasar, Dauh Puri Kaja Village.  Now I am still a student at one of the vocational campuses in Bali, namely the Bali State Polytechnic.</p>
+
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing web/App interface</li>
+                    <li><span>Java Script</span><br>Building Java programs</li>
+                    <li><span>PHP</span><br>Create a website using the PHP language</li>
+                    <li><span>Canva</span><br>Make a design with Canva</li>
+                    <li><span>Microsoft Excel/Access</span><br>Managing or analyzing data</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020-2023</span><br>Senior High School 7 Denpasar</li>
+                    <li><span>2023-2027</span><br>Bali State Polytechnic</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Seminar Section -->
+    <div id="seminar">
+        <div class="container">
+            <h1 class="sub-title">My Seminar</h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <img src="images/sertif.png.png">
+                    <h2>Backend Fundamental</h2>
+                    <p>Seminar yang diselenggarakan oleh MySkill</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <img src="images/sertif 2.png">
+                    <h2>Kedinasan</h2>
+                    <p>Seminar Kedinasan</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project 1.png" alt="Project 1">
+                    <div class="layer">
+                        <h3>Kasir Restaurant</h3>
+                        <p>Membuat kasir restaurant menggunakan bahasa JavaScript</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project 2.png" alt="Project 2">
+                    <div class="layer">
+                        <h3>UI/UX Design</h3>
+                        <p>Membuat desain tampilan aplikasi menggunakan Figma</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project mobil.png" alt="Project 4">
+                    <div class="layer">
+                        <h3>PHP</h3>
+                        <p>Membuat website rental mobil</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project formulir.png" alt="Project 4">
+                    <div class="layer">
+                        <h3>PHP</h3>
+                        <p>Membuat formulir pendaftaran</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak proyek di sini -->
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> agungkarinatha123@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 085738362361</p>
+                    <p><i class="i fa-brands fa-linkedin"></i> Agung Karinatha</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="i fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="i fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="success-message" id="success-message">
+            <p>Your message has been sent successfully!</p>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <p>Made with by I Gusti Lanang Agung Karinatha<i class="fa-solid fa-crown"></i></p>
+    </div>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- JavaScript for Side Menu -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        // Function to scroll to contact section
+    function scrollToContact() {
+        var contactSection = document.getElementById("contact");
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+        closemenu(); // Close side menu after scrolling
+    }
+    </script>
+
+    <!-- JavaScript for EmailJS -->
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            emailjs.sendForm('service_xa83mpp', 'template_i3f688v', this)
+                .then(function() {
+                    document.getElementById('success-message').style.display = 'block';
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    alert('Failed to send the message, please try again.');
+                });
+        });
+    </script>
+</body>
+</html>
